@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">EleveSaude</string>
+
+    <string name="titulo_meta">Título da Meta</string>
+    <string name="fundamentacao_meta">Fundamentação</string>
+    <string name="num_execucoes">Nº de Execuções</string>
+    <string name="data_limite">Data Limite</string>
+    <string name="tipo_meta">Tipo de Meta</string>
+
+    <string name="campos_obrigatorios">Preencha todos os campos para criar uma meta</string>
+    <string name="num_exec_zero">O número de execuções de uma meta deve ser maior que 0</string>
+
+    <string name="concluir">CONCLUIR</string>
+    <string name="concluido">CONCLUÍDO</string>
+    <string name="metas_info">Essas são as suas metas. Adicione uma nova meta ou toque em uma meta para visualizar mais informações sobre ela</string>
+    <string name="meta_concluida">Parabéns! Você já concluiu esta meta!</string>
+
+
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="@dimen/view_margin"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/front_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/top_card"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:padding="@dimen/layout_padding_normal"
+                android:layout_alignParentTop="true">
+
+                <ImageView
+                    android:id="@+id/foto_tipo_meta"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/layout_padding_normal"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/white"/>
+
+                <TextView
+                    android:id="@+id/titulo_meta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/foto_tipo_meta"
+                    android:layout_centerVertical="true"
+                    android:autoSizeMaxTextSize="@dimen/view_margin"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottom_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_card"
+                android:paddingBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:weightSum="3">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/porcentagem_meta_concluida"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="25sp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/porcentagem_meta_concluida"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/concluido"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white">
+                    </View>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/data_limite_meta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="20/11"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/data_limite_meta"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/data_limite"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white">
+                    </View>
+
+                    <RelativeLayout
+                        android:id="@+id/marcar_feito"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/check"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="0dp"
+                            android:background="@drawable/check"
+                            android:backgroundTint="@color/white"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/check"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/concluir"
+                            android:layout_marginTop="4dp"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/back_card"
+            android:layout_width="match_parent"
+            android:layout_height="178dp"
+            android:layout_below="@id/front_card"
+            android:padding="@dimen/layout_padding_normal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/fundamentacao_meta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:autoSizeMaxTextSize="@dimen/view_margin"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/num_exec_meta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tipo_meta"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textAlignment="viewEnd"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
